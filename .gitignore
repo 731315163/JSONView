@@ -1,0 +1,11 @@
+Library/
+Temp/
+obj/
+Universe/
+.vs/
+*.sln
+*.csproj
+*.sdf
+*.userprefs
+*.unityproj
+*.DS_Store
