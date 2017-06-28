@@ -29,12 +29,11 @@ class JsonView : EditorWindow
 
 
     #region 菜单栏
-    [MenuItem("JsonView/JsonWindow")]
+    [MenuItem("Tools/JsonWindow")]
 	static void  Init() {
         var window = GetWindow(typeof( JsonView));
         window.position =new Rect(0, 0, 800, 600);
-        window.Show();
-        
+        window.Show();       
     }
     #endregion
     #region 序列化 与反序列
@@ -252,7 +251,7 @@ class JsonView : EditorWindow
             }
             else
             {
-                string[] filename = savefilepath.Split( '/');
+                string[] filename = savefilepath.Split( '/');               
                 StringBuilder dirc = new StringBuilder();
                 for(int i = 0; i < filename.Length-1; ++i) {
                     dirc.Append(filename[i]);
